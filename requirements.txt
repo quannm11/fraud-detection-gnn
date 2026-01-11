@@ -1,0 +1,20 @@
+numpy<2.0.0
+pandas>=2.0.0
+scikit-learn==1.4.2
+matplotlib
+seaborn
+
+# --- ML Models ---
+xgboost==2.0.3
+
+# --- API & Serving ---
+fastapi
+uvicorn
+python-multipart
+
+# --- Utils ---
+jupyterlab
+ipykernel
+tqdm
+joblib
+networkx
