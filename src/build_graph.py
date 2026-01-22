@@ -21,7 +21,7 @@ FEATURE_COLS = [
     'card1'
 ]
 
-def load_and_preprocess(path, sample_size=None):
+def load_and_preprocess(path):
     print(f"Loading data from {path}...")
     df = pd.read_pickle(path)
     
@@ -97,7 +97,7 @@ def convert_to_heterodata(G, df):
     return data
 
 if __name__ == "__main__":
-    df = load_and_preprocess(PKL_PATH, sample_size=100000) 
+    df = load_and_preprocess(PKL_PATH) 
     G = build_networkx_graph(df, EDGE_CONFIG)
     pyg_data = convert_to_heterodata(G, df)
     
